@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ak27 — On Top</title>
+<meta name="description" content="Ak27 is a Minecraft launcher for Windows: one file, every version from 1.8.9 to 26.3, a built-in HUD engine, 3D cosmetics and custom skies.">
+<meta property="og:title" content="Ak27 — On Top">
+<meta property="og:description" content="One file. Every version from 1.8.9 to 26.3. HUD, 3D cosmetics and skies, without a single mod.">
+<meta property="og:image" content="img/wings.jpg">
+<meta name="theme-color" content="#08090c">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="glow g1" aria-hidden="true"></div>
+<div class="glow g2" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="img/logo.png" alt="" width="34" height="34"><span>Ak27</span><em>On Top</em></a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#install">Install</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn sm pri dl" href="#download">Download</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text reveal">
+      <span class="pill"><span class="dot"></span> <span data-ver>Version 1.0.2</span> · Windows</span>
+      <h1>Play Minecraft<br><i>on top.</i></h1>
+      <p class="lead">One file. Every version from <b>1.8.9</b> to <b>26.3</b>. A HUD, 3D cosmetics and custom skies built right in, without installing a single mod.</p>
+      <div class="cta">
+        <a class="btn pri big dl" id="download" href="https://github.com/wizzardblabla/ak27-site/releases/latest/download/Ak27.exe">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1zM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2z"/></svg>
+          Download for Windows
+        </a>
+        <a class="btn ghost big" href="#features">See every feature</a>
+      </div>
+      <p class="fine"><span data-size>Ak27.exe · 9.8 MB</span> · Windows 10 and 11 · Free</p>
+    </div>
+    <div class="hero-shot reveal">
+      <div class="frame tilt"><img src="img/modules.jpg" alt="The Ak27 in-game menu, Modules page, with color and opacity settings for the cape" width="1280" height="720"></div>
+      <div class="frame float"><img src="img/wings.jpg" alt="A player in third person with phoenix wings and a golden halo under a night sky" width="1280" height="720"></div>
+    </div>
+  </section>
+
+  <section class="stats reveal" aria-label="Ak27 in numbers">
+    <div><b>1.8.9 → 26.3</b><span>Every Minecraft version</span></div>
+    <div><b>4</b><span>Loaders: Vanilla, Fabric, Forge, NeoForge</span></div>
+    <div><b>1</b><span>Single file, nothing to install</span></div>
+    <div><b>0</b><span>Mods required for the HUD</span></div>
+  </section>
+
+  <section id="features" class="block">
+    <div class="head reveal">
+      <span class="kicker">Features</span>
+      <h2>Everything you need, <i>in one launcher.</i></h2>
+      <p>From the oldest PvP version to the newest snapshot. Hand features need 1.17 or newer.</p>
+    </div>
+
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">⬢</span><div><h3>Launcher</h3><p>Install, manage and launch any version in a few clicks.</p></div></div>
+      <ul class="cards">
+        <li><b>Every version</b><span>From 1.8.9 to 26.3, plus snapshots.</span></li>
+        <li><b>Loaders installed for you</b><span>Fabric, Forge and NeoForge, picked and set up automatically.</span></li>
+        <li><b>Official Microsoft sign-in</b><span>Your password only goes to Microsoft. Several accounts supported.</span></li>
+        <li><b>Instances</b><span>Memory, resolution, Java arguments and an automatic performance boost per instance.</span></li>
+        <li><b>Automatic snapshots</b><span>Your worlds and settings are saved before each launch.</span></li>
+        <li><b>Built-in catalogue</b><span>Mods, resource packs, shaders and modpacks from Modrinth.</span></li>
+        <li><b>Live backgrounds</b><span>Petals, rain, snow, fireflies, aurora, stars, or your own JSON background.</span></li>
+        <li><b>Wardrobe</b><span>Skins and capes in a 3D preview, applied to your account in one click.</span></li>
+        <li><b>Music player</b><span>Your tracks and an online search, playing in the launcher and in game.</span></li>
+        <li><b>4 languages</b><span>English, French, Spanish and German.</span></li>
+        <li><b>Automatic updates</b><span>New versions install themselves, checked and signed.</span></li>
+        <li><b>Quick connect</b><span>Join your favorite servers straight from the home page.</span></li>
+      </ul>
+    </div>
+
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">◈</span><div><h3>In game</h3><p>A HUD engine that loads with the game: no mod, no conflict, any loader.</p></div></div>
+      <ul class="cards">
+        <li><b>Ak27 menu</b><span>Right Shift opens it on every version. Searchable, rebindable key.</span></li>
+        <li><b>HUD Editor</b><span>Drag, resize and recolor every widget, saved live.</span></li>
+        <li><b>Widgets</b><span>FPS, CPU, RAM, ping, keystrokes, CPS, clock, music, resources, target info.</span></li>
+        <li><b>Tryhard Inv</b><span>Redesigned health, hunger, armor and XP bars. Hidden in creative.</span></li>
+        <li><b>Hit &amp; jump effects</b><span>Hit particles, jump effect and ambient fireflies.</span></li>
+        <li><b>Smooth camera</b><span>Cinematic camera in one toggle.</span></li>
+        <li><b>ViewModel</b><span>Move and resize the item in your hand (1.17+).</span></li>
+        <li><b>1.8 animations</b><span>Slow, smooth or classic swing, and no item dip after a hit (1.17+).</span></li>
+        <li><b>Hand Shaders</b><span>Glow, tint or rainbow outline on your hand only (1.17+).</span></li>
+        <li><b>3 buttons per module</b><span>Quick color, settings (color, opacity, style) and reset.</span></li>
+      </ul>
+    </div>
+
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">✦</span><div><h3>Cosmetics &amp; skies</h3><p>Real 3D, attached to your player, hidden by blocks, drawn under every menu.</p></div></div>
+      <ul class="cards">
+        <li><b>Capes</b><span>Ak27, Black Hole, Galaxy, Flame, Aurora and Solid, with cloth physics.</span></li>
+        <li><b>Wings</b><span>Phoenix, Angel, Neon and Dragon, flapping faster when you fly.</span></li>
+        <li><b>Halos &amp; hats</b><span>Halo, crown, top hat and china hat.</span></li>
+        <li><b>6 trails</b><span>Ribbon, Comet, Dual, Flame, Rainbow and Sparkle.</span></li>
+        <li><b>6 auras</b><span>Orbit, Rings, Helix, Flame, Stars and Pulse.</span></li>
+        <li><b>Rings, orbs &amp; grid</b><span>Extra effects around you and under your feet.</span></li>
+        <li><b>Ak27 badges</b><span>See who else plays with Ak27 above their name.</span></li>
+        <li><b>Sky Shaders</b><span>8 generated skies (nebula, galaxy, aurora, sunset...) fixed in the world, or your own image.</span></li>
+      </ul>
+    </div>
+
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">⚒</span><div><h3>Build &amp; community</h3><p>Tools for builders and a Discord bot for your group.</p></div></div>
+      <ul class="cards">
+        <li><b>Auto Build</b><span>Litematica and Baritone installed together: load a schematic, it builds.</span></li>
+        <li><b>Baritone control panel</b><span>Mine, farm or go to a spot from the Ak27 menu. Singleplayer and servers allowed by the owner.</span></li>
+        <li><b>Ak27 Manager bot</b><span>Update announcements, changelogs, moderation and an assistant that answers questions.</span></li>
+        <li><b>Visual only</b><span>No PvP module and no advantage over other players.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery" class="block">
+    <div class="head reveal">
+      <span class="kicker">Gallery</span>
+      <h2>Straight from the game.</h2>
+      <p>Real screenshots, no edits.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal wide"><img src="img/phoenix.jpg" alt="Huge phoenix wings and a halo seen from behind on 1.16.5" loading="lazy" width="1280" height="720"><figcaption>Phoenix wings · 1.16.5</figcaption></figure>
+      <figure class="reveal"><img src="img/front.jpg" alt="Front view of a player with a halo and wings in a forest on 1.12.2" loading="lazy" width="1280" height="720"><figcaption>Halo and wings · 1.12.2</figcaption></figure>
+      <figure class="reveal"><img src="img/modules.jpg" alt="Ak27 menu showing modules with three buttons each" loading="lazy" width="1280" height="720"><figcaption>Modules and their settings</figcaption></figure>
+      <figure class="reveal"><img src="img/wings.jpg" alt="Wings, halo and HUD under a starry sky on 1.8.9" loading="lazy" width="1280" height="720"><figcaption>Night sky · 1.8.9</figcaption></figure>
+      <figure class="reveal"><img src="img/menu.jpg" alt="The Ak27 menu over the game" loading="lazy" width="1280" height="720"><figcaption>The Ak27 menu</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="install" class="block">
+    <div class="head reveal">
+      <span class="kicker">Install</span>
+      <h2>Ready in <i>one minute.</i></h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><b>Download</b><p>Get <code>Ak27.exe</code> with the button above.</p></li>
+      <li class="reveal"><span>2</span><b>Run it</b><p>No installer. If Windows SmartScreen shows up, click <i>More info</i> then <i>Run anyway</i>.</p></li>
+      <li class="reveal"><span>3</span><b>Sign in &amp; play</b><p>Sign in with Microsoft, pick a version and press Play.</p></li>
+    </ol>
+  </section>
+
+  <section id="faq" class="block narrow">
+    <div class="head reveal">
+      <span class="kicker">FAQ</span>
+      <h2>Questions.</h2>
+    </div>
+    <details class="reveal"><summary>Is Ak27 a cheat client?</summary><p>No. Every module is visual: HUD, cosmetics, skies and animations. There is no PvP module and nothing that gives you an advantage over other players.</p></details>
+    <details class="reveal"><summary>Is my account safe?</summary><p>Sign-in goes through Microsoft's official page. Ak27 never sees or stores your password.</p></details>
+    <details class="reveal"><summary>Do I need to install mods?</summary><p>No. The HUD and cosmetics load with the game on their own, so they work with Vanilla, Fabric, Forge and NeoForge without conflicts. You can still add mods from the catalogue.</p></details>
+    <details class="reveal"><summary>Can other players see my cosmetics?</summary><p>Cosmetics are drawn on your screen. Other Ak27 players see your Ak27 badge above your name.</p></details>
+    <details class="reveal"><summary>Is Baritone allowed everywhere?</summary><p>Baritone and Auto Build work in singleplayer and on servers allowed by the owner. Many servers forbid bots: check the rules before using them.</p></details>
+    <details class="reveal"><summary>Which systems are supported?</summary><p>Windows 10 and Windows 11, 64-bit.</p></details>
+  </section>
+
+  <section class="final reveal">
+    <h2>Ready to play <i>on top?</i></h2>
+    <a class="btn pri big dl" href="https://github.com/wizzardblabla/ak27-site/releases/latest/download/Ak27.exe">Download Ak27</a>
+  </section>
+</main>
+
+<footer>
+  <div class="brand"><img src="img/logo.png" alt="" width="26" height="26"><span>Ak27</span></div>
+  <p>Unofficial project. Not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+  <button class="link" id="devOpen" type="button">Developer</button>
+</footer>
+
+<dialog id="dev" aria-labelledby="devTitle">
+  <form id="devForm" class="devbox">
+    <h3 id="devTitle">Developer mode</h3>
+    <p class="muted">Enter the developer code.</p>
+    <input id="devCode" type="password" autocomplete="off" placeholder="Code" required>
+    <p id="devErr" class="err" role="alert"></p>
+    <div class="row"><button class="btn ghost" type="button" id="devCancel">Cancel</button><button class="btn pri" type="submit" id="devGo">Unlock</button></div>
+  </form>
+  <div id="devContent" class="devcontent" hidden></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
