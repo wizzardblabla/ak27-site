@@ -214,3 +214,9 @@ dialog::backdrop { background: rgba(0, 0, 0, .6); backdrop-filter: blur(6px); }
   .frame.float { animation: none; }
   .btn, .cards li, .gallery img { transition: none; }
 }
+
+/* maintenance : bandeau en haut, telechargements coupes */
+.maint-banner { display: none; }
+body.maintenance .maint-banner { display: block; position: relative; z-index: 11; padding: 12px max(16px, 5vw); text-align: center; font-size: 15px; color: #1a1300; background: linear-gradient(90deg, #f2c14e, #ffd98a); }
+body.maintenance .maint-banner b { margin-right: 8px; }
+body.maintenance .dl { pointer-events: none; opacity: .45; filter: grayscale(1); }

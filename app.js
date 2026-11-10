@@ -119,3 +119,8 @@ const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   };
   dlg.addEventListener("close", () => { form.hidden = false; box.hidden = true; box.replaceChildren(); dlg.classList.remove("wide"); });
 })();
+
+// maintenance : les boutons de telechargement ne menent nulle part
+if (document.body.classList.contains("maintenance")) {
+  document.querySelectorAll(".dl").forEach(a => { a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.title = "Downloads are paused during maintenance"; });
+}
