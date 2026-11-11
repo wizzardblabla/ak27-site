@@ -56,6 +56,7 @@ const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const dlg = document.getElementById("dev"), form = document.getElementById("devForm"),
     input = document.getElementById("devCode"), err = document.getElementById("devErr"),
     box = document.getElementById("devContent"), go = document.getElementById("devGo");
+  if (!dlg) return; // pages sans mode developpeur (features.html)
   const b64 = s => Uint8Array.from(atob(s), ch => ch.charCodeAt(0));
 
   document.getElementById("devOpen").onclick = () => { err.textContent = ""; input.value = ""; dlg.showModal(); input.focus(); };

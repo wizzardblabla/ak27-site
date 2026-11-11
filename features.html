@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ak27 — Every feature</title>
+<meta name="description" content="Ak27 is a Minecraft launcher for Windows: one file, every version from 1.8.9 to 26.3, a built-in HUD engine, 3D cosmetics and custom skies.">
+<meta property="og:title" content="Ak27 — On Top">
+<meta property="og:description" content="One file. Every version from 1.8.9 to 26.3. HUD, 3D cosmetics and skies, without a single mod.">
+<meta property="og:image" content="img/aura.jpg">
+<meta name="theme-color" content="#08090c">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="glow g1" aria-hidden="true"></div>
+<div class="glow g2" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="34" height="34"><span>Ak27</span><em>On Top</em></a>
+  <nav>
+    <a href="features.html">Features</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#install">Install</a>
+    <a href="index.html#faq">FAQ</a>
+  </nav>
+  <a class="btn sm pri dl" href="index.html#download">Download</a>
+</header>
+
+<main id="top">
+  <section class="block">
+    <div class="head reveal">
+      <span class="kicker">Ak27 2.0.0</span>
+      <h2>Every feature, <i>in one place.</i></h2>
+      <p>Ak27 is a launcher and an in-game client in one 10 MB file. Everything is visual or quality-of-life: nothing gives you an unfair advantage.</p>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">⬢</span><div><h3>Launching Minecraft</h3><p>Every version, every loader, set up for you.</p></div></div>
+      <ul class="cards">
+        <li><b>Every version</b><span>From 1.8.9 to 26.x (Java Edition), snapshots included.</span></li>
+        <li><b>4 loaders</b><span>Vanilla, Fabric, Forge and NeoForge, installed automatically.</span></li>
+        <li><b>Instances</b><span>As many as you want, each with its own version, mods, worlds, RAM, window size and Java options.</span></li>
+        <li><b>Automatic Java</b><span>The right Java for each Minecraft version (8, 21, 25), downloaded for you.</span></li>
+        <li><b>Lighter on RAM</b><span>Since 2.0.0 the game frees up to 3 GB of RAM at launch. A Max profile keeps everything reserved.</span></li>
+        <li><b>Optimization pack</b><span>Well-known performance mods (Sodium, Lithium...) in one click on Fabric and NeoForge.</span></li>
+        <li><b>Repair and logs</b><span>Re-check game files, open the instance folder, read the game log.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">◉</span><div><h3>Account and content</h3><p>Official sign-in and a built-in catalogue.</p></div></div>
+      <ul class="cards">
+        <li><b>Official Microsoft sign-in</b><span>Microsoft&#x27;s own page opens. Ak27 never sees your password. Several accounts supported.</span></li>
+        <li><b>Official demo</b><span>No Minecraft? Your Microsoft account launches the official demo with the full HUD and cosmetics.</span></li>
+        <li><b>Modrinth catalogue</b><span>Search and install mods, shaders, resource packs and modpacks, with dependencies.</span></li>
+        <li><b>Mods on and off</b><span>Disable a mod without deleting it, or import your own files.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">▣</span><div><h3>Game menus</h3><p>New in 2.0.0: Minecraft&#x27;s menus, the Ak27 way.</p></div></div>
+      <ul class="cards">
+        <li><b>Ak27 title menu</b><span>Replaces the Minecraft title screen in every version and loader: logo, player card, Singleplayer, Multiplayer, Mods, Settings.</span></li>
+        <li><b>Ak27 pause menu</b><span>Press Esc in game: Resume, Settings, Ak27 Menu, Disconnect, with the server address.</span></li>
+        <li><b>In-game Ak27 menu</b><span>Right Shift opens every launcher page right in the game, with a brand new animated design.</span></li>
+        <li><b>Custom icons</b><span>Pick an icon for every tab and category from 120+ icons, in any color, or use your own image.</span></li>
+        <li><b>Menu backgrounds</b><span>Nebula, any live background, or your own pictures behind your menus.</span></li>
+        <li><b>HUD editor</b><span>Drag every HUD element where you want it, then set its size, color and opacity.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">◧</span><div><h3>HUD</h3><p>Every element moves, resizes and takes your colors.</p></div></div>
+      <ul class="cards">
+        <li><b>System and FPS</b><span>CPU, RAM, FPS and an FPS graph.</span></li>
+        <li><b>PvP essentials</b><span>Keystrokes, CPS, ping, armor status, held item, potion effects.</span></li>
+        <li><b>Resources</b><span>Golden apples, totems, crystals and XP bottles counted for you.</span></li>
+        <li><b>Tryhard Inv</b><span>Hotbar and health, hunger and XP bars redrawn to be easier to read.</span></li>
+        <li><b>Target HUD</b><span>Health and armor of the player you are looking at.</span></li>
+        <li><b>And more</b><span>Coordinates, clock, session time, music player, beats, module list, keybinds, notifications.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">✦</span><div><h3>Cosmetics</h3><p>Seen by you in third person, previewed in 3D in the launcher.</p></div></div>
+      <ul class="cards">
+        <li><b>Wings, capes, halos, hats</b><span>Inferno, Dragon, Angel and Neon wings, 6 capes, 3 halos, China Hat, Crown and Top Hat.</span></li>
+        <li><b>11 auras</b><span>Orbit, Rings, Helix, Flame, Stars, Pulse, and new: Electric, Ice, Cosmic, Dark and Neon.</span></li>
+        <li><b>Trails and effects</b><span>6 trails, rings, ribbon, orbs and a glowing ground grid.</span></li>
+        <li><b>Workshop</b><span>3 colors, size, speed, density and opacity for every cosmetic.</span></li>
+        <li><b>Movement effects</b><span>Jump ripple, landing ripple and cloud, sprint dust.</span></li>
+        <li><b>Ak27 badges</b><span>A badge above every other Ak27 player you meet.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">◐</span><div><h3>Visual modules</h3><p>Make the game look the way you like.</p></div></div>
+      <ul class="cards">
+        <li><b>Sky Shaders</b><span>Nebula, Galaxy, Aurora, Sunset, Vaporwave, Pastel, Void, Storm, or your own image.</span></li>
+        <li><b>Hand and items</b><span>ViewModel position and size, 1.8 animations, glowing hand shaders, enchant glint color.</span></li>
+        <li><b>Particles</b><span>Hit particles and fireflies around you.</span></li>
+        <li><b>Camera</b><span>Smooth camera and camera tweaks.</span></li>
+        <li><b>Name Protect</b><span>Shows a fake name instead of yours, for streams and videos.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">◆</span><div><h3>Customization</h3><p>A launcher that looks like you.</p></div></div>
+      <ul class="cards">
+        <li><b>Themes</b><span>11 Ak27 themes plus Sakura, or your own colors, fonts, blur and corners.</span></li>
+        <li><b>Look gallery</b><span>10 complete moods in one click: Cyberpunk Night, Synthwave, Zen Sakura, Galaxy...</span></li>
+        <li><b>Profiles</b><span>Save, export and share your whole look. Undo any change with Ctrl+Z.</span></li>
+        <li><b>Quality levels</b><span>Low to Extreme, reduced motion, and a smart mode that saves your PC when you&#x27;re away.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">❖</span><div><h3>Backgrounds</h3><p>Live, animated, and yours.</p></div></div>
+      <ul class="cards">
+        <li><b>26 live backgrounds</b><span>12 categories: Cyberpunk, Space, Block landscapes, Night, Japanese, Neon, 3D... They react to your mouse.</span></li>
+        <li><b>Your own</b><span>Images, videos, animated JSON backgrounds, and a wallpaper search.</span></li>
+        <li><b>Wallpaper Engine</b><span>Import the video and image wallpapers you&#x27;re already subscribed to.</span></li>
+        <li><b>Fine-tuning</b><span>Speed, intensity, blur, brightness, saturation, opacity, playlist, auto change and favorites.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">♫</span><div><h3>Music, sounds and Wardrobe</h3><p>Your music in the game, your skin on your account.</p></div></div>
+      <ul class="cards">
+        <li><b>Music player</b><span>Your tracks, playlist, shuffle, equalizer, shown and controlled in game.</span></li>
+        <li><b>Click sounds</b><span>6 built-in sounds or your own, in the launcher and in game.</span></li>
+        <li><b>Wardrobe</b><span>Skins in 3D, any player&#x27;s skin by name, classic or slim, applied in one click. Pick your official cape.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">◎</span><div><h3>Stats and quality of life</h3><p>Small things that make a big difference.</p></div></div>
+      <ul class="cards">
+        <li><b>Stats</b><span>Playtime and FPS per session, with a small graph.</span></li>
+        <li><b>Time machine</b><span>A backup of your config, mods and packs before every launch, restorable in one click.</span></li>
+        <li><b>Crash help</b><span>If the game crashes, Ak27 explains why and names the mods involved.</span></li>
+        <li><b>Search and shortcuts</b><span>Ctrl+K to search everything, Alt+1 to 9 for pages, F1 for help.</span></li>
+        <li><b>Automatic updates</b><span>Updates install themselves, with a What&#x27;s new window and a guided tour.</span></li>
+        <li><b>4 languages</b><span>English, Français, Español and Deutsch, in the launcher and in game.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">✉</span><div><h3>Discord bot: Ak27 Manager</h3><p>Every command works with / and with your server prefix.</p></div></div>
+      <ul class="cards">
+        <li><b>Moderation</b><span>Warn, kick, ban, temporary ban, mute, lockdown, numbered sanction history.</span></li>
+        <li><b>Roles</b><span>Give, remove, temporary roles, create, edit, info and mass changes.</span></li>
+        <li><b>Administration</b><span>Purge with filters, slowmode, nicknames, voice tools, announcements, polls, emojis, info.</span></li>
+        <li><b>Logs</b><span>Deleted and edited messages, joins and leaves, roles, channels, voice and sanctions.</span></li>
+        <li><b>AutoMod and anti-raid</b><span>Spam, invites, links, caps, mass mentions, banned words, raids and young accounts.</span></li>
+        <li><b>Tickets and welcome</b><span>Ticket panel with transcripts, welcome and goodbye messages, English or French.</span></li>
+      </ul>
+    </div>
+    <div class="group reveal">
+      <div class="ghead"><span class="ico">⛔</span><div><h3>What Ak27 will never do</h3><p>On purpose.</p></div></div>
+      <ul class="cards">
+        <li><span>No cheat modules: no KillAura, Aim Assist, Reach, hitboxes, ESP, Triggerbot or AutoClicker.</span></li>
+        <li><span>No cracked version: you need a Microsoft account, with the game or the official demo.</span></li>
+        <li><span>No &quot;ping boost&quot; and no connection tricks.</span></li>
+      </ul>
+    </div>
+    <p class="fine reveal" style="text-align:center;color:var(--muted)">Known limits: on 1.13 to 1.14.3 the Ak27 menus and game-state features are not available. Ak27.exe is not digitally signed yet; the <a href="index.html#faq">FAQ</a> explains how to check your download.</p>
+  </section>
+  <section class="final reveal">
+    <h2>Ready to play <i>on top?</i></h2>
+    <a class="btn pri big dl" href="https://github.com/wizzardblabla/ak27-site/releases/latest/download/Ak27.exe">Download Ak27</a>
+  </section>
+</main>
+
+<footer>
+  <div class="brand"><img src="img/logo.png" alt="" width="26" height="26"><span>Ak27</span></div>
+  <p>Unofficial project. Not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
